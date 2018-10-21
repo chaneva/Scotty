@@ -1,0 +1,219 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,footer,header,nav,section{display:block}
+h1{font-size:2em;margin:.67em 0}
+figcaption,figure,main{display:block}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0;overflow:visible}
+pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+	font-family: 'Space Mono', monospace, sans-serif;
+	font-size: 28px;
+	color: white;
+	background-image: url("../images/space-background.jpg");
+  background-attachment: fixed;
+ 	background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh; 
+}
+
+
+body.homebody{
+  background-image: url("../images/space-background2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container{
+  width: 1600px;
+}
+
+img {
+  max-width: 100%;
+  max-width: 123px;
+  cursor: cell;
+  margin: 0 auto;
+  vertical-align: top;
+  }
+
+
+a{
+  text-align: center;
+  padding: 10px 40px;
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: transparent; 
+}
+
+h1.line-1{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    animation: glow 2s infinite alternate;
+    text-shadow: 0 0 4px #cccccc;   
+}
+
+h2{
+  text-align: center;
+  font-size: 1em;
+}
+
+h6.smallanalog{
+  font-size: 0.6em;
+  color: black;
+  padding: 10px;
+  margin-top: -20px;
+  text-align: center;
+  background-color: #cccccc;
+}
+
+h6.awkwardpoints{
+  font-size: 0.7em;
+  text-align: left;
+  padding: 0px 30px;
+  animation: glow 2s infinite alternate;
+  text-shadow: 0 0 10px red;
+}
+
+p{
+  font-size: 0.6em;
+}
+
+p.head {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    cursor: cell;    
+    position: relative;
+    animation: glow 2s infinite alternate;
+    text-shadow: 0 0 2px #cccccc; 
+}
+
+p.span1{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:hover{
+      color: #E60712;
+    }
+}
+
+
+.passagecontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    cursor: cell;    
+    position: relative;
+    margin-top: 10px;
+  }
+
+.homehead {
+  text-align: center; 
+  margin-top: 22vh;
+ } 
+
+.rhombus{
+  background-color: #ffffff;
+}
+
+.selectone{
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  transform: skew(15deg);
+}
+
+
+// Gauge Meter styles
+
+.meter-gauge{
+  content: '';
+  width: 400px;
+  height: 205px;
+  background-image: linear-gradient(to right, yellow , red);
+  margin: 50px auto;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-left: 178px;
+    margin-top: 178px;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 185px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 180px solid #ffffff;
+    border-radius: 10px;
+    -webkit-transform-origin: 50% 98%;
+    -ms-transform-origin: 50% 98%;
+    transform-origin: 50% 98%;
+    -webkit-animation: moveNeedle 3s;
+    animation: moveNeedle 3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@-webkits-keyframes moveNeedle {
+  0% {-webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);}
+  100% {-webkit-transform: rotate(90deg);
+    transform: rotate(90deg);}
+}
+@keyframes moveNeedle {
+  0% {-webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);}
+  100% {-webkit-transform: rotate(90deg);
+    transform: rotate(90deg);}
+}
+
+
+// Home Glowing button
+.start{
+  padding: 30px;
+  margin:0 auto;
+}
+
+a.startbutton {
+  -webkit-animation-name: startbutton;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: cell;  
+}
+
+@-webkit-keyframes startbutton{
+  from { background-color:  #6231D7; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: transparent; -webkit-box-shadow: 0 0 18px  #B697EF; }
+  to { background-color:  #6231D7; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+
+
+
+
+
+
